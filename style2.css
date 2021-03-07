@@ -1,15 +1,15 @@
 body {
   font-family: helvetica, arial, sans-serif;
-  margin: 2em;
+  margin: 0;
   background-color: grey;
 /*   background: url(https://cdn.glitch.com/227b0f22-05ca-464c-b4b6-7fdd81215db5%2FWeb_project.png?v=1614202988477) no-repeat; */
 }
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 20px;
+  grid-template-columns: auto auto;
+  grid-gap: 0px;
 /*   background-color: #2196F3; */
-  padding: 20px;
+  padding: 10px;
 }
 
 .grid-container > div {
@@ -37,11 +37,12 @@ h2 {
 footer {
   position: relative;
   background-color: #000;
-  /* top: 10px; */
+  color: white;
+  top: 10px;
   /* left: 0; */
-  bottom: 0px;
+  bottom: 10px;
   line-height: 10px;
-  padding: 0px;
+  padding: 10px;
   /* height: 100px; */
-  width: 100%;
+  /* width: 100%; */
 }

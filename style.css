@@ -2,7 +2,7 @@
 body {
   font-family: helvetica, arial, sans-serif;
   margin: 2em;
-  background: url(https://cdn.glitch.com/227b0f22-05ca-464c-b4b6-7fdd81215db5%2FWeb_project_gb.png?v=1614204790700) no-repeat;
+  background: url("assets/images/Web_project_gb.png") no-repeat;
   /*   background-width: 1000px;
   background-height:800ox; */
 }
@@ -12,4 +12,6 @@ h1 {
   color: #373fff;
 }
 
-a {}
+a {
+
+}
