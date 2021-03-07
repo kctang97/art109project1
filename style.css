@@ -1,0 +1,40 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+  background: url(https://cdn.glitch.com/227b0f22-05ca-464c-b4b6-7fdd81215db5%2FWeb_project_gb.png?v=1614204790700) no-repeat;
+/*   background-width: 1000px;
+  background-height:800ox; */
+}
+
+/* img {
+   padding: 50px 0px 0px 370px;
+   width: 1200px;
+   height: 800px;
+} */
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+
+a {
+  
+}
+
+/* .button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+/*   margin: 4px 2px; */
+/*   cursor: pointer; */
+} */
+
+/* .button1 {
+  background-color: #008CBA;
+} */

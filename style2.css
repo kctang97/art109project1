@@ -1,0 +1,55 @@
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+  background-color: grey;
+/*   background: url(https://cdn.glitch.com/227b0f22-05ca-464c-b4b6-7fdd81215db5%2FWeb_project.png?v=1614202988477) no-repeat; */
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+/*   background-color: #2196F3; */
+  padding: 20px;
+}
+
+.grid-container > div {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  /* border-style: groove;
+  border: 1px solid black; */
+  text-align: center;
+  font-size: 30px;
+}
+
+img {
+  width: 500px;
+  height:300px;
+}
+
+h6{
+    text-align: center;
+  color: #fff;
+}
+
+h2 {
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+
+  /* border-style: ridge;
+  border-color: coral;
+  border-width: 10px;
+  background: coral; */
+}
+
+footer {
+  position: relative;
+  background-color: #000;
+  /* top: 10px; */
+  /* left: 0; */
+  bottom: 0px;
+  line-height: 10px;
+  padding: 0px;
+  /* height: 100px; */
+  width: 100%;
+}
