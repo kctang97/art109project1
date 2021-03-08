@@ -1,10 +1,20 @@
 /* CSS files add styling rules to your content */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: helvetica, arial, sans-serif;
-  margin: 2em;
-  background: url("assets/images/Web_project_gb.png") no-repeat;
+  /* margin: 2em; */
   /*   background-width: 1000px;
   background-height:800ox; */
+  background: #fff;
+  /* background: linear-gradient(45deg, #000421, #222b76, #000421);
+  background-size: 400% 400%;
+  position: relative;
+  animation: change 20s ease-in-out infinite; */
 }
 
 h1 {
@@ -12,6 +22,20 @@ h1 {
   color: #373fff;
 }
 
+.button{
+
+}
+
+img{
+
+  /* padding: 50px; */
+}
 a {
 
+}
+
+@keyframes change {
+    0%{background-position:0% 90%}
+    50%{background-position:100% 82%}
+    100%{background-position:0% 90%}
 }
