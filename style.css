@@ -1,5 +1,5 @@
 /* CSS files add styling rules to your content */
-@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Teko:wght@500&display=swap');
 
 *{
   margin: 0;
@@ -8,8 +8,12 @@
 }
 
 body {
-  font-family: 'DotGothic16', sans-serif;
-  background: #fff;
+  font-family: 'Press Start 2P', cursive;
+  /* background: #fff; */
+  background: linear-gradient(90deg, #7b7b7b, #9f9f9f, #7a7a7a);
+  background-size: 400% 400%;
+  position: relative;
+  animation: change 20s ease-in-out infinite;
 }
 
 .container {
@@ -26,26 +30,43 @@ body {
 }
 
 a{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 15px;
   text-decoration: none;
 }
 
 .container .btn {
+  font-family: 'DotGothic16', sans-serif;
+  font-weight: bold;
   position: absolute;
   top: 30%;
   left: 60%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  background-color: #f1f1f1;
-  color: black;
-  font-size: 16px;
-  padding: 16px 30px;
+  background-color: #e7e7e7;
+  color: #ff6b81;
+  font-size: 20px;
+  padding: 10px 20px;
   border: none;
   cursor: pointer;
   border-radius: 5px;
   text-align: center;
+  display: inline-block;
+  box-shadow: 0 10px 30px rgba(0,0,0,.5);
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
 
 .container .btn:hover {
-  background-color: Gray;
+  background-color: #7a7a7a;
   color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* graident background */
+
+@keyframes change {
+    0%{background-position:0% 90%}
+    50%{background-position:100% 82%}
+    100%{background-position:0% 90%}
 }

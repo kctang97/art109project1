@@ -1,24 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
 
 body {
-  font-family: helvetica, arial, sans-serif;
+  font-family: 'Teko', sans-serif;
   margin: 0;
   padding: 0;
   color:#fff;
-  background: linear-gradient(45deg, #000421, #222b76, #000421);
+  background: linear-gradient(45deg, #000421, #222b76, #3d4abb, #000421);
   background-size: 400% 400%;
   position: relative;
-  animation: change 20s ease-in-out infinite;
+  animation: change 15s ease-in-out infinite;
 }
+
+/* #btnScrollToTop{
+  display: none;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #fff;
+  /* box-shadow: 0 10px 30px rgba(0,0,0,0.5); */
+  /* color: #000;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+  transition-property: background-color, color;
+} */
+
+/* #btnScrollToTop:active {
+  background: #7b7b7b;
+} */
 
 /* The grid container */
 .grid-container {
-  /* padding: 100px; */
   display: grid;
   grid-template-areas:
     'header header header header header header'
@@ -26,7 +54,15 @@ body {
     'footer footer footer footer footer footer';
   /* grid-column-gap: 10px; - if you want gap between the columns */
   grid-gap: 20px;
-  grid-template-columns: auto auto;
+  background: url(assets/images/pattern.png) repeat;
+}
+
+.header {
+  border-style: solid #000421;
+  margin-top: 5%;
+  padding: 0;
+  background:#0f3057;
+  box-shadow: 0 10px 30px rgba(0,0,0,1);
 }
 
 .left,
@@ -44,8 +80,9 @@ body {
 /* Style the middle column */
 .middle {
   grid-area: middle;
-    /* background:url("assets/images/background.png") repeat ; */
-  /* top: 10 */
+  box-shadow: 0 10px 30px rgba(0,0,0,1);
+  /* margin-top: 2%; */
+  margin-bottom: 5%;
 }
 
 /* Style the right column */
@@ -55,9 +92,11 @@ body {
 
 /* Style the footer */
 .footer {
+  margin-top: 5%;
   grid-area: footer;
   background-color: black;
   padding: 10px;
+  font-size: 25px;
   text-align: center;
   color: #fff;
   margin: 0;
@@ -75,16 +114,28 @@ body {
 }
 
 img {
-  width: 400px;
-  height:250px;
+  filter: grayscale(100%);
+  transition: 0.5s ease-in-out;
+  width: 300px;
+  height: 200px;
+  padding: 10px;
 }
 
+img:hover {
+  filter: grayscale(0%);
+}
+
+h3{
+  padding: 0px 10px;
+  letter-spacing: 20px;
+}
 
 h2 {
   padding: 20px;
   color: #fff;
   text-align: center;
   font-size: 60px;
+  letter-spacing: 10px;
 }
 
 /*
@@ -111,7 +162,7 @@ ul{
   background: #0f3057;
   display: flex;
   border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 30px rgba(0,0,0,1);
 }
 
 ul li {
@@ -150,7 +201,7 @@ ul li a .icon .fa {
 }
 
 ul li a .icon .fa:last-child{
-  color: #008891;
+  color: #70a1ff;
 }
 
 ul li a:hover .icon .fa {
@@ -182,7 +233,7 @@ ul li a .name span:before {
   left: 0;
   width: 100%;
   height: 100%;
-  color: #008891;
+  color: #70a1ff;
 }
 
 ul li a:hover .name span {
