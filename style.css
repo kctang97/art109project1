@@ -19,7 +19,7 @@ body {
 }
 
 .container img {
-  margin-top: 5%;
+  /* margin-top: 5%; */
   margin-left: 10%;
   width: 100%;
   height: 100%;
@@ -31,7 +31,7 @@ a{
 
 .container .btn {
   position: absolute;
-  top: 35%;
+  top: 30%;
   left: 60%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
