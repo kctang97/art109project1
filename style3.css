@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee+Inline&family=Press+Start+2P&family=Teko:wght@500&display=swap');
+
+body{
+  font-family: 'Bungee Inline', cursive;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-image: linear-gradient(45deg, #70a1ff, #ff6348, #eccc68);
+  background-size: 400% 400%;
+  position: relative;
+  animation: change 20s ease-in-out infinite;
+  overflow: hidden;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #343434;
+    /* box-shadow: 0 10px 30px rgba(0,0,0,0.3); */
+}
+
+.container h1{
+  font-size: 150px;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 20px;
+  background: url(assets/images/bg.png) center no-repeat;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.container h2{
+  font-size: 50px;
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 10px;
+}
+
+.container p {
+  font-size: 30px;
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 10px;
+}
+
+.container a {
+  text-decoration: none;
+  background: #ff6b81;
+  color: #fff;
+  margin: 10;
+  padding: 12px 24px;;
+  display: inline-block;
+  border-radius: 25px;
+  font-size: 20px;
+  text-transform: uppercase;
+  transition: 0.5s;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  letter-spacing: 10px;
+}
+
+.container a:hover {
+  background: #ff4757;
+}
+
+@keyframes change {
+    0%{background-position:0% 90%}
+    50%{background-position:100% 82%}
+    100%{background-position:0% 90%}
+}
+
+@keyframes cube {
+    from {
+        transform: scale(0) rotate(0deg) translate(-50%, -50%);
+        opacity: 1;
+    }
+    to {
+        transform: scale(20) rotate(960deg) translate(-50%, -50%);
+        opacity: 0;
+    }
+}
+
+/* .background { */
+    /* position: fixed; */
+    /* width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(45deg, #70a1ff, #ff6348, #eccc68);
+    overflow: hidden;
+} */
+.background li {
+    position: absolute;
+    top: 30vh;
+    left: 30vw;
+    width: 10px;
+    height: 10px;
+    border: solid 1px #d63031;
+    color: transparent;
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    animation: cube 7s ease-in forwards infinite;
+    overflow: hidden;
+}
+
+.background li:nth-child(0) {
+    animation-delay: 0s;
+    left: 35vw;
+    top: 28vh;
+    overflow: hidden;
+}
+
+.background li:nth-child(1) {
+    animation-delay: 2s;
+    left: 31vw;
+    top: 30vh;
+    overflow: hidden;
+}
+
+.background li:nth-child(2) {
+    animation-delay: 4s;
+    left: 35vw;
+    top: 39vh;
+    overflow: hidden;
+}
+
+.background li:nth-child(3) {
+    animation-delay: 6s;
+    left: 35vw;
+    top: 13vh;
+}
+
+.background li:nth-child(4) {
+    animation-delay: 8s;
+    left: 28vw;
+    top: 41vh;
+}
+
+.background li:nth-child(5) {
+    animation-delay: 10s;
+    left: 13vw;
+    top: 40vh;
+    border-color: #ff6b81;
+    overflow: hidden;
+}

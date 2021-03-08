@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Teko', sans-serif;
+  margin: 0;
+  padding: 0;
+  color:#fff;
+  background: linear-gradient(45deg, #000421, #222b76, #3d4abb, #000421);
+  background-size: 400% 400%;
+  position: relative;
+  animation: change 15s ease-in-out infinite;
+}
+
+/* #btnScrollToTop{
+  display: none;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #fff;
+  /* box-shadow: 0 10px 30px rgba(0,0,0,0.5); */
+  /* color: #000;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+  transition-property: background-color, color;
+} */
+
+/* #btnScrollToTop:active {
+  background: #7b7b7b;
+} */
+
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'left middle middle middle middle right'
+    'footer footer footer footer footer footer';
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+  grid-gap: 20px;
+  background: url(assets/images/pattern.png) repeat;
+}
+
+.header {
+  border-style: solid #000421;
+  margin-top: 5%;
+  padding: 0;
+  background:#0f3057;
+  box-shadow: 0 10px 30px rgba(0,0,0,1);
+}
+
+.left,
+.middle,
+.right {
+  padding: 10px;
+  /* height: 300px; /* Should be removed. Only for demonstration */ */
+}
+
+/* Style the left column */
+.left {
+  grid-area: left;
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+  box-shadow: 0 10px 30px rgba(0,0,0,1);
+  /* margin-top: 2%; */
+  margin-bottom: 5%;
+}
+
+/* Style the right column */
+.right {
+  grid-area: right;
+}
+
+/* Style the footer */
+.footer {
+  margin-top: 5%;
+  grid-area: footer;
+  background-color: black;
+  padding: 10px;
+  font-size: 25px;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .grid-container  {
+    grid-template-areas:
+      'header header header header header header'
+      'left left left left left left'
+      'middle middle middle middle middle middle'
+      'right right right right right right'
+      'footer footer footer footer footer footer';
+  }
+}
+
+img {
+  filter: grayscale(100%);
+  transition: 0.5s ease-in-out;
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+}
+
+img:hover {
+  filter: grayscale(0%);
+}
+
+h3{
+  padding: 0px 10px;
+  letter-spacing: 20px;
+}
+
+h2 {
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  font-size: 60px;
+  letter-spacing: 10px;
+}
+
+/*
+.footer {
+   position: relative;
+   left: 0;
+   bottom: 0;
+   padding: 10px;
+   /* width: 100%; */
+   /* background-color: #000;
+   color: white;
+   line-height: 10px;
+   /* text-align: center; */
+   /* overflow: hidden;
+} */
+
+ul{
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 20px 0;
+  background: #0f3057;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,1);
+}
+
+ul li {
+  list-style: none;
+  text-align: center;
+  display: block;
+  border-right: 1px solid rgba(0,0,0,0.2);
+}
+
+ul li:last-child {
+  border-right: none;
+}
+
+ul li a {
+  text-decoration: none;
+  padding: 0 50px;
+  display: block;
+}
+
+ul li a .icon {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  /* background: #ccc; */
+  overflow: hidden;
+  margin: 0 auto 10px;
+}
+
+ul li a .icon .fa {
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+  font-size: 32px;
+  transition: 0.5s;
+  color: #e7e7de;
+}
+
+ul li a .icon .fa:last-child{
+  color: #70a1ff;
+}
+
+ul li a:hover .icon .fa {
+  transform: translateY(-100%);
+}
+
+ul li a .name {
+  position: relative;
+  height: 20px;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+ul li a .name span {
+  display: block;
+  position: relative;
+  color: #e7e7de;
+  font-size: 18px;
+  line-height: 20px;
+  transition: 0.5s;
+
+}
+
+ul li a .name span:before {
+  content: attr(data-text);
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #70a1ff;
+}
+
+ul li a:hover .name span {
+  transform: translateY(20px);
+}
+
+/* graident background */
+
+@keyframes change {
+    0%{background-position:0% 90%}
+    50%{background-position:100% 82%}
+    100%{background-position:0% 90%}
+}
